@@ -5,13 +5,13 @@
 class Skillman < Formula
   desc "Cross-agent AI skill manager with a local UI"
   homepage "https://github.com/melvicsosa/skillman"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.1/skillman_0.6.1_darwin_amd64.tar.gz"
-      sha256 "5a28aeba863489ac137669b3b41e843666b3adac74be2328e4b09dddefee5b50"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.2/skillman_0.6.2_darwin_amd64.tar.gz"
+      sha256 "91d5ab1fe121dd8cace6f82aaba1cf9a3c1ff14c74684288b833e580549b9023"
 
       define_method(:install) do
         bin.install "skillman"
@@ -19,8 +19,8 @@ class Skillman < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.1/skillman_0.6.1_darwin_arm64.tar.gz"
-      sha256 "8fa24dd8a086cba0a16ed344cb1089f879d0845e0b281f5d72f8aa60108cf276"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.2/skillman_0.6.2_darwin_arm64.tar.gz"
+      sha256 "33742cf716e3cae5786090163a2eb4a460d210df1024fe1f218ec530e0c9d5b1"
 
       define_method(:install) do
         bin.install "skillman"
@@ -31,16 +31,16 @@ class Skillman < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.1/skillman_0.6.1_linux_amd64.tar.gz"
-      sha256 "83137158a7b45d4fe25310e73e330ed687683ffa7fcf70e2de93340d4e62ed43"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.2/skillman_0.6.2_linux_amd64.tar.gz"
+      sha256 "f3adc0a6236aecfbf19cfbc2525c51cecad3783e5f8d2a049eb2e4628e067bc3"
       define_method(:install) do
         bin.install "skillman"
         bin.install "skillman-tray" if OS.mac?
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.1/skillman_0.6.1_linux_arm64.tar.gz"
-      sha256 "af3288030cb4795e00a91fdbe0e8231bdb33bab4e1d39a6751e035da77ebae27"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.6.2/skillman_0.6.2_linux_arm64.tar.gz"
+      sha256 "9529ea6e13170a85760ec1658d889c8d65960f0ed2742be443a9513bb6445285"
       define_method(:install) do
         bin.install "skillman"
         bin.install "skillman-tray" if OS.mac?
