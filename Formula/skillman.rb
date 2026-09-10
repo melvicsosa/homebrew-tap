@@ -5,21 +5,21 @@
 class Skillman < Formula
   desc "Cross-agent AI skill manager with a local UI"
   homepage "https://github.com/melvicsosa/skillman"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.1.0/skillman_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e9216da0a720a002403bf0a7003eb94b1e62e64a5e98540272ff6b308f0cc552"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.2.0/skillman_0.2.0_darwin_amd64.tar.gz"
+      sha256 "c61fe3bd5ad387aea3c61fd04f8a3cc981e149abfd1f695885c8496716c63a3b"
 
       define_method(:install) do
         bin.install "skillman"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.1.0/skillman_0.1.0_darwin_arm64.tar.gz"
-      sha256 "10e3f6528b7d8083e11ceee8781f5b8039fcdf05fa40660ab63ee5ba4fce20ab"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.2.0/skillman_0.2.0_darwin_arm64.tar.gz"
+      sha256 "84ff03839a739d3d5d559d55d76dc61ef3650f3886ea5e7869021a3b06e07afc"
 
       define_method(:install) do
         bin.install "skillman"
@@ -29,15 +29,15 @@ class Skillman < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.1.0/skillman_0.1.0_linux_amd64.tar.gz"
-      sha256 "d96768558ec8bace1d9937f229285d52a564e7a58db67914c1c10ec3155c628f"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.2.0/skillman_0.2.0_linux_amd64.tar.gz"
+      sha256 "c5d650d869ff97468d5e762237c571f2aa902e1f1897ecf7a4ed0b2992bbdd90"
       define_method(:install) do
         bin.install "skillman"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/melvicsosa/skillman/releases/download/v0.1.0/skillman_0.1.0_linux_arm64.tar.gz"
-      sha256 "66c8749750cb11840da90eaee15371ec2c202fdbe5e3ed946d2a0411112840d2"
+      url "https://github.com/melvicsosa/skillman/releases/download/v0.2.0/skillman_0.2.0_linux_arm64.tar.gz"
+      sha256 "743436e22641e3993733324e53a5bb585b00c31b12539730a1b23184efa01cf3"
       define_method(:install) do
         bin.install "skillman"
       end
